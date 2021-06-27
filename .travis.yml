@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - ehco "start creating an image with dockerfile"
+  - echo "start creating an image with dockerfile"
   - docker build -t neomirage/docker-react-app -f Dockerfile.dev .
 
 script:
